@@ -16,6 +16,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14' # Or any version greater than 16
+
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v2
         with:
@@ -33,6 +38,7 @@ jobs:
         with:
           name: .net-app
           path: ${{env.DOTNET_ROOT}}/myapp
+
 
   deploy:
     runs-on: windows-latest
