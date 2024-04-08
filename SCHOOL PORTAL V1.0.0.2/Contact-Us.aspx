@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="contactPage_container">
+    <section class="contactPage_container">
         <h1>Reach out to us</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eaque porro quaerat modi incidunt blanditiis
             molestias deserunt quos nulla ex! </p>
@@ -59,7 +59,7 @@
 
         </div>
 
-    </div>
+    </section>
 
 
     <section>

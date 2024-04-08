@@ -21,7 +21,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="SigninPage">
+    <section class="SigninPage">
 
 
         <asp:Panel runat="server" CssClass="signin_card">
@@ -119,6 +119,6 @@
 
 
 
-    </div>
+    </section>
 
 </asp:Content>

@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="galleryHero_container">
+    <section class="galleryHero_container">
 
         <div class="galleryHero_card">
             <h1>Our Gallery <span>.</span></h1>
@@ -15,10 +15,10 @@
                 non id, ut optio nostrum dicta fugit.
             </p>
         </div>
-    </div>
+    </section>
 
 
-    <div class="gallery_container">
+    <section class="gallery_container">
 
         <div class="grid-wrapper">
             <div class="image-container">
@@ -71,7 +71,7 @@
             </div>
 
         </div>
-    </div>
+    </section>
 
 
 </asp:Content>

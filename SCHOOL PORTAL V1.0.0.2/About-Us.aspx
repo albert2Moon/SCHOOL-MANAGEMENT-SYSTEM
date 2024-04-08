@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="aboutHero_container">
+    <section class="aboutHero_container">
 
         <div class="aboutHero_card">
             <h1>About Us <span>.</span></h1>
@@ -16,7 +16,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus veniam repudiandae
                 non id, ut optio nostrum dicta fugit. </p>
         </div>
-    </div>
+    </section>
 
     <!-- About Section -->
 
