@@ -67,17 +67,129 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About-Us.aspx" />
+    <Content Include="Contact-Us.aspx" />
+    <Content Include="Gallery.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="ResourceFiles\Portals\images\img1.jpg" />
+    <Content Include="ResourceFiles\Portals\images\img2.jpg" />
+    <Content Include="ResourceFiles\Portals\images\img3.jpg" />
+    <Content Include="ResourceFiles\Portals\images\img4.jpg" />
+    <Content Include="ResourceFiles\Portals\images\img5.jpg" />
+    <Content Include="ResourceFiles\Portals\images\img6.jpg" />
+    <Content Include="ResourceFiles\Portals\images\img7.jpg" />
+    <Content Include="ResourceFiles\Portals\images\img8.jpg" />
+    <Content Include="ResourceFiles\Portals\images\img9.jpg" />
+    <Content Include="ResourceFiles\Portals\images\user.jpg" />
+    <Content Include="ResourceFiles\Portals\images\user_profile.svg" />
+    <Content Include="ResourceFiles\Portals\script.js" />
+    <Content Include="ResourceFiles\Portals\style.css" />
+    <Content Include="ResourceFiles\Website\images\1.jpeg" />
+    <Content Include="ResourceFiles\Website\images\10.jpeg" />
+    <Content Include="ResourceFiles\Website\images\11.jpeg" />
+    <Content Include="ResourceFiles\Website\images\12.jpeg" />
+    <Content Include="ResourceFiles\Website\images\13.jpeg" />
+    <Content Include="ResourceFiles\Website\images\2.jpeg" />
+    <Content Include="ResourceFiles\Website\images\3.jpeg" />
+    <Content Include="ResourceFiles\Website\images\4.jpeg" />
+    <Content Include="ResourceFiles\Website\images\5.jpeg" />
+    <Content Include="ResourceFiles\Website\images\6.jpeg" />
+    <Content Include="ResourceFiles\Website\images\7.jpeg" />
+    <Content Include="ResourceFiles\Website\images\8.jpeg" />
+    <Content Include="ResourceFiles\Website\images\about_bg.jpeg" />
+    <Content Include="ResourceFiles\Website\images\android-chrome-192x192.png" />
+    <Content Include="ResourceFiles\Website\images\android-chrome-512x512.png" />
+    <Content Include="ResourceFiles\Website\images\apple-touch-icon.png" />
+    <Content Include="ResourceFiles\Website\images\arrow-up.svg" />
+    <Content Include="ResourceFiles\Website\images\bg2.jpg" />
+    <Content Include="ResourceFiles\Website\images\bg3.jpeg" />
+    <Content Include="ResourceFiles\Website\images\bg4.jpeg" />
+    <Content Include="ResourceFiles\Website\images\bg5.jpeg" />
+    <Content Include="ResourceFiles\Website\images\bg6.jpeg" />
+    <Content Include="ResourceFiles\Website\images\book.png" />
+    <Content Include="ResourceFiles\Website\images\education.png" />
+    <Content Include="ResourceFiles\Website\images\favicon-16x16.png" />
+    <Content Include="ResourceFiles\Website\images\favicon-32x32.png" />
+    <Content Include="ResourceFiles\Website\images\favicon.ico" />
+    <Content Include="ResourceFiles\Website\images\favicon.ico.svg" />
+    <Content Include="ResourceFiles\Website\images\hero-bg.jpeg" />
+    <Content Include="ResourceFiles\Website\images\n1.jpeg" />
+    <Content Include="ResourceFiles\Website\images\n2.jpeg" />
+    <Content Include="ResourceFiles\Website\images\n3.jpeg" />
+    <Content Include="ResourceFiles\Website\images\n4.jpeg" />
+    <Content Include="ResourceFiles\Website\images\n5.jpeg" />
+    <Content Include="ResourceFiles\Website\images\n6.jpeg" />
+    <Content Include="ResourceFiles\Website\images\n7.jpeg" />
+    <Content Include="ResourceFiles\Website\images\news.jpeg" />
+    <Content Include="ResourceFiles\Website\images\password.svg" />
+    <Content Include="ResourceFiles\Website\images\pupil.png" />
+    <Content Include="ResourceFiles\Website\images\school.png" />
+    <Content Include="ResourceFiles\Website\images\signin_logo.svg" />
+    <Content Include="ResourceFiles\Website\images\t1.jpeg" />
+    <Content Include="ResourceFiles\Website\images\t2.jpeg" />
+    <Content Include="ResourceFiles\Website\images\t3.jpeg" />
+    <Content Include="ResourceFiles\Website\images\t4.jpeg" />
+    <Content Include="ResourceFiles\Website\images\teacher.png" />
+    <Content Include="ResourceFiles\Website\images\user.svg" />
+    <Content Include="ResourceFiles\Website\images\user_logo.svg" />
+    <Content Include="ResourceFiles\Website\script.js" />
+    <Content Include="ResourceFiles\Website\style.css" />
+    <Content Include="Signin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About-Us.aspx.cs">
+      <DependentUpon>About-Us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About-Us.aspx.designer.cs">
+      <DependentUpon>About-Us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact-Us.aspx.cs">
+      <DependentUpon>Contact-Us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact-Us.aspx.designer.cs">
+      <DependentUpon>Contact-Us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Signin.aspx.cs">
+      <DependentUpon>Signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signin.aspx.designer.cs">
+      <DependentUpon>Signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Website.Master.cs">
+      <DependentUpon>Website.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website.Master.designer.cs">
+      <DependentUpon>Website.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="ResourceFiles\Website\images\9" />
+    <Content Include="ResourceFiles\Website\images\site.webmanifest" />
     <None Include="Properties\PublishProfiles\StAngellaSchool - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\StAngellaSchool - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
@@ -86,6 +198,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Website.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
