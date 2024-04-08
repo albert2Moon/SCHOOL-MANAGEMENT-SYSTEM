@@ -1,0 +1,210 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="dashboard.master.cs"
+    Inherits="SCHOOL_PORTAL_V1._0._0._1.Portals.Teachers.dashboard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St.Angella | Teacher's Portal</title>
+
+    <link rel="icon" type="image/x-icon" href="../ResourceFiles/Website/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../ResourceFiles/Website/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../ResourceFiles/Website/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../ResourceFiles/Website/images/favicon-16x16.png">
+    <link rel="manifest" href="../ResourceFiles/Website/images/site.webmanifest">
+
+
+    <link rel="stylesheet" type="text/css" href="../../ResourceFiles/Portals/style.css" />
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script>
+        // Function to add active class to navItem if the current URL matches
+        function setActiveClass() {
+            // Get the current page URL
+            var currentPageUrl = window.location.pathname;
+
+            // Get the navItem elements
+            var navItems = document.getElementsByClassName('navItem');
+
+            // Loop through each navItem and add or remove active class based on URL match
+            for (var i = 0; i < navItems.length; i++) {
+                var navItemUrl = navItems[i].parentElement.getAttribute('href');
+                if (navItemUrl === currentPageUrl) {
+                    navItems[i].classList.add('active');
+                } else {
+                  navItems[i].classList.remove('active');
+                }
+            }
+        }
+
+        // Call setActiveClass on page load
+        window.onload = setActiveClass;
+    </script>
+
+
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+        <asp:ScriptManager runat="server" />
+
+        <asp:UpdatePanel runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+
+
+
+
+
+                <div class="container">
+
+
+                    <div class="navigation">
+
+
+                        <div class="navHeader">
+                            <div>
+                                <div class="navIcon"></div>
+                                <div class="navHeaderTitle">
+                                    <h1><span id="letter">St</span>.Angella</h1>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="navBody">
+
+
+
+                            <a href="<%= Page.GetRouteUrl("TeachersHomeRoute", null) %>">
+                                <div class="navItem" id="HomeNavItem">
+                                    <div class="navIcon">
+                                        <ion-icon name="grid-outline"></ion-icon>
+                                    </div>
+                                    <div class="navContent">
+                                        <p>Dashboard</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <a href="<%= Page.GetRouteUrl("ResultsRoute", null) %>">
+                                <div class="navItem" id="ResultsNavItem">
+                                    <div class="navIcon">
+                                        <ion-icon name="document-text-outline"></ion-icon>
+                                    </div>
+                                    <div class="navContent">
+                                        <p>Results</p>
+                                    </div>
+
+                                </div>
+                            </a>
+
+
+                            <a href="<%= Page.GetRouteUrl("AddpupilRoute", null) %>">
+                                <div class="navItem" id="AddpupilNavItem">
+                                    <div class="navIcon">
+                                        <ion-icon name="person-add-outline"></ion-icon>
+                                    </div>
+                                    <div class="navContent">
+                                        <p>Add Pupil</p>
+                                    </div>
+
+                                </div>
+                            </a>
+
+
+                            <a href="<%= Page.GetRouteUrl("SignOutRoute", null) %>">
+                                <div class="navItem" id="SignoutNavItem">
+
+                                    <div class="navIcon">
+                                        <ion-icon name="log-out-outline"></ion-icon>
+                                    </div>
+                                    <div class="navContent">
+                                        <p>Sign Out</p>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                        </div>
+
+
+                        <div class="navFooter">
+                            <div>
+                                <div class="navIcon"></div>
+                                <div class="navFooterTitle">
+                                    <p>Valtazine</p>
+                                    <p>V1.0.0.1</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="topbar">
+
+                        <div class="menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+
+                        <div class="portalName">
+                            <h1>Teacher's Portal</h1>
+                        </div>
+
+                        <div class="user">
+                            <img src="../../ResourceFiles/Portals/images/user_profile.svg" />
+                        </div>
+
+                    </div>
+
+                    <div class="contentContainer">
+
+                        <asp:ScriptManagerProxy runat="server" />
+                        <asp:UpdatePanel runat="server">
+
+                            <ContentTemplate>
+
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+
+                            </ContentTemplate>
+
+                        </asp:UpdatePanel>
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </ContentTemplate>
+        </asp:UpdatePanel>
+
+    </form>
+
+
+
+
+    <script src="../../ResourceFiles/Portals/script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

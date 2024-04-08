@@ -72,6 +72,17 @@
     <Content Include="Gallery.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
+    <Content Include="Portals\Parents\home.aspx" />
+    <Content Include="Portals\Parents\profile.aspx" />
+    <Content Include="Portals\Parents\reportcard.aspx" />
+    <Content Include="Portals\Parents\signout.aspx" />
+    <Content Include="Portals\Students\home.aspx" />
+    <Content Include="Portals\Students\report.aspx" />
+    <Content Include="Portals\Students\signout.aspx" />
+    <Content Include="Portals\Teachers\addpupil.aspx" />
+    <Content Include="Portals\Teachers\home.aspx" />
+    <Content Include="Portals\Teachers\results.aspx" />
+    <Content Include="Portals\Teachers\signout.aspx" />
     <Content Include="ResourceFiles\Portals\images\img1.jpg" />
     <Content Include="ResourceFiles\Portals\images\img2.jpg" />
     <Content Include="ResourceFiles\Portals\images\img3.jpg" />
@@ -170,6 +181,104 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Portals\Parents\dashboard.Master.cs">
+      <DependentUpon>dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Parents\dashboard.Master.designer.cs">
+      <DependentUpon>dashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Portals\Parents\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Parents\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portals\Parents\profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Parents\profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portals\Parents\reportcard.aspx.cs">
+      <DependentUpon>reportcard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Parents\reportcard.aspx.designer.cs">
+      <DependentUpon>reportcard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portals\Parents\signout.aspx.cs">
+      <DependentUpon>signout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Parents\signout.aspx.designer.cs">
+      <DependentUpon>signout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portals\Students\dashboard.Master.cs">
+      <DependentUpon>dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Students\dashboard.Master.designer.cs">
+      <DependentUpon>dashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Portals\Students\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Students\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portals\Students\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Students\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portals\Students\signout.aspx.cs">
+      <DependentUpon>signout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Students\signout.aspx.designer.cs">
+      <DependentUpon>signout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portals\Teachers\addpupil.aspx.cs">
+      <DependentUpon>addpupil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Teachers\addpupil.aspx.designer.cs">
+      <DependentUpon>addpupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portals\Teachers\dashboard.Master.cs">
+      <DependentUpon>dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Teachers\dashboard.Master.designer.cs">
+      <DependentUpon>dashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Portals\Teachers\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Teachers\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portals\Teachers\results.aspx.cs">
+      <DependentUpon>results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Teachers\results.aspx.designer.cs">
+      <DependentUpon>results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portals\Teachers\signout.aspx.cs">
+      <DependentUpon>signout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portals\Teachers\signout.aspx.designer.cs">
+      <DependentUpon>signout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Signin.aspx.cs">
       <DependentUpon>Signin.aspx</DependentUpon>
@@ -190,6 +299,9 @@
     <None Include="packages.config" />
     <Content Include="ResourceFiles\Website\images\9" />
     <Content Include="ResourceFiles\Website\images\site.webmanifest" />
+    <Content Include="Portals\Parents\dashboard.Master" />
+    <Content Include="Portals\Students\dashboard.Master" />
+    <Content Include="Portals\Teachers\dashboard.Master" />
     <None Include="Properties\PublishProfiles\StAngellaSchool - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\StAngellaSchool - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
