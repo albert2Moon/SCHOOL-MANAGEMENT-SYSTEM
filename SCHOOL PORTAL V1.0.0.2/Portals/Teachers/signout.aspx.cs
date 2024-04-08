@@ -20,7 +20,7 @@ namespace SCHOOL_PORTAL_V1._0._0._1.Portals.Teachers
         protected void BtnYes_Click(object sender, EventArgs e)
         {
             // Redirect the user to a different page upon clicking "Yes"
-            Response.Redirect("~/Website/Home.aspx");
+            Response.Redirect("~/Home.aspx");
         }
 
         protected void BtnCancel_Click(object sender, EventArgs e)
